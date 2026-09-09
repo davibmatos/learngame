@@ -1,0 +1,17 @@
+{
+  "name": "lumi-learngame",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lumi — A Ilha das Palavras. Protótipo autoral de apoio à alfabetização em português brasileiro.",
+  "scripts": {
+    "dev": "npm run build && node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": { "typescript": "5.8.3" },
+  "engines": { "node": ">=22.12.0" }
+}
